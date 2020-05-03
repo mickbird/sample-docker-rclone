@@ -24,7 +24,7 @@ ARG RCLONE_PKG_URL=https://downloads.rclone.org/v${RCLONE_VERSION}/rclone-v${RCL
 FROM build-common AS build-linux-arm-v7
 ARG RCLONE_PKG_URL=https://downloads.rclone.org/v${RCLONE_VERSION}/rclone-v${RCLONE_VERSION}-linux-arm.zip
 
-FROM build-common AS build-linux-arm-v8
+FROM build-common AS build-linux-arm64
 ARG RCLONE_PKG_URL=https://downloads.rclone.org/v${RCLONE_VERSION}/rclone-v${RCLONE_VERSION}-linux-arm64.zip
 
 
