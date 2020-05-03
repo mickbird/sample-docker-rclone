@@ -28,6 +28,6 @@ jobs:
         run: |
           docker buildx build \
             --push \
-            --tag mickbird/sample-docker-rclone:${{steps.vars.outputs.tag}} \
+            --tag mickbird/sample-docker-rclone:${{steps.vars.outputs.tag}} mickbird/sample-docker-rclone:latest \
             --platform linux/amd64,linux/arm/v7,linux/arm64 \
             .
